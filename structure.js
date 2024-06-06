@@ -56,16 +56,18 @@ const div = document.createElement('div')
 span.id = 'bottom-text';
 div.id = 'icons';
 const footer = document.querySelector('.footer');
-const bottomLinks = ['https://github.com/Iryste', 'https://github.com/Iryste', 'https://github.com/Iryste'];
+const bottomLinks = ['https://github.com/Iryste', 'https://github.com/Iryste', 'https://github.com/Iryste', './img/montage.png'];
 
 const i = document.createElement('i');
 const i2 = document.createElement('i');
 const i3 = document.createElement('i');
+const i4 = document.createElement('i')
 
 span.innerText = 'retrouvez moi sur les reseaux'
 i.className = 'fa-brands fa-github';
 i2.className = 'fa-brands fa-linkedin';
 i3.className = 'fa-brands fa-twitter';
+i4.className = 'fa-solid fa-question';
 
 bottomLinks.forEach(liens => {
     const aFooter = document.createElement('a');
@@ -74,7 +76,7 @@ bottomLinks.forEach(liens => {
     footer.append(span);
     span.append(div);
     div.append(aFooter);
-    aFooter.append(i, i2, i3);
+    aFooter.append(i, i2, i3, i4);
     
 })
 
