@@ -1,4 +1,4 @@
-const apiUrl = 'https://zelda.fanapis.com/api/games'
+const apiUrl = 'https://zelda.fanapis.com/api/games';
 
 export async function fetchData() {
     const options = {
