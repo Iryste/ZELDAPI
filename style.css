@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'The Wild Breath of Zelda', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#head-title {
+    position: absolute;
+    z-index: 1;
+}
+
+h1 {
+    color: green;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+#navbar {
+    background-color: #fbf2c0;
+    width: 100vw;
+    border-bottom: 8px solid #313e50;
+    border-top: 8px solid #313e50;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3 ease;
+}
+
+li a:hover {
+    color: green;
+}
+
+#boxes {
+    display: flex;
+    margin: 30px;
+}
+
+.box {
+    border: 3px solid black;
+    height: 350px;
+    width: 600px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 3rem;
+}
