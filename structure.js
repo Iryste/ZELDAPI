@@ -24,6 +24,7 @@ const a4 = document.createElement('a');
 const a5 = document.createElement('a');
 
 a.innerText = 'lieux';
+a.href = './lieux.html'
 a2.innerText = 'boss';
 a3.innerText = 'donjons';
 a4.innerText = 'personnages';
