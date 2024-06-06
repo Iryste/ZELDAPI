@@ -25,10 +25,10 @@ const a5 = document.createElement('a');
 
 a.innerText = 'lieux';
 a.href = './lieux.html'
-a2.innerText = 'boss';
-a3.innerText = 'donjons';
-a4.innerText = 'personnages';
+a2.innerText = 'personnages';
 a5.innerText = 'objets';
+a3.innerText = 'donjons';
+a4.innerText = 'boss';
 navBar.append(ul);
 ul.append(li, li2, li3, li4, li5);
 li.append(a);
@@ -48,8 +48,37 @@ li5.append(a5);
 //     li.appendChild(a)
 //     ul.appendChild(li)
 // })
-
 // navBar.appendChild(ul)
+
+
+const span = document.createElement('span');
+const div = document.createElement('div')
+span.id = 'bottom-text';
+div.id = 'icons';
+const footer = document.querySelector('.footer');
+const bottomLinks = ['https://github.com/Iryste', 'https://github.com/Iryste', 'https://github.com/Iryste'];
+
+const i = document.createElement('i');
+const i2 = document.createElement('i');
+const i3 = document.createElement('i');
+
+span.innerText = 'retrouvez moi sur les reseaux'
+i.className = 'fa-brands fa-github';
+i2.className = 'fa-brands fa-linkedin';
+i3.className = 'fa-brands fa-twitter';
+
+bottomLinks.forEach(liens => {
+    const aFooter = document.createElement('a');
+    aFooter.href = liens;
+    aFooter.setAttribute('target', '_blank');
+    footer.append(span);
+    span.append(div);
+    div.append(aFooter);
+    aFooter.append(i, i2, i3);
+    
+})
+
+
 
 
 
