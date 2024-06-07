@@ -1,6 +1,6 @@
 import { fetchData } from "./fetch.js";
 
 
-fetchData('?name=Skyward').then((data) => {
+fetchData().then((data) => {
     console.log(data);
 })
