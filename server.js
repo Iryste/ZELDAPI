@@ -14,15 +14,16 @@ app.listen(port, (error) => {
 app.get('/games', (req, res) => {
     const games = [
         {
-            name: "The Legend of Zelda",
+            name: "the legend of zelda",
             description: "The Legend of Zelda is the first installment of the Zelda series. It centers its plot around a boy named Link, who becomes the central protagonist throughout the series. It came out as early as 1986 for the Famicom in Japan, and was later released in the western world, including Europe and the US in 1987. It has since then been re-released several times, for the Nintendo GameCube as well as the Game Boy Advance. The Japanese version of the game on the Famicom is known as The Hyrule Fantasy: The Legend of Zelda. ",
             developer: "Nintendo R&D 4",
             publisher: "Nintendo",
+            image: './img/zelda0.jpg',
             released_date: " February 21, 1986",
             id: "5f6ce9d805615a85623ec2b7"
         },
         {
-            "name": "The Legend of Zelda: A Link to the Past",
+            "name": "the legend of zelda: a link to the past",
             "description": "One day, a band of evil thieves managed to open the gateway to the Sacred Realm, where the mystical Triforce was hidden. Upon finding the sacred golden relic, the leader of the thieves, Ganondorf, slew his followers and claimed it as his own. Before long, dark power began to flow forth from the Sacred Realm. People were drawn into this darkness, and never heard from again. As a result, the King of Hyrule ordered the seven sages to seal the entrance to the Sacred Realm. A great battle ensued—monsters poured into the Light World from the sacred land and attacked the castle. The Knights of Hyrule defended the sages during the great battle against evil, and, though most of them perished in the struggle, the sages were able to cast their seal, stopping the flow of darkness and trapping the evil king Ganon within. This battle became known as the Imprisoning War. ",
             "developer": "Nintendo",
             "publisher": "Nintendo",

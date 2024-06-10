@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 header {
     display: flex;
     position: relative;
@@ -63,13 +65,15 @@ li a:hover {
 #boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-left: 100px;
     background-color: green;
 }
 
 .box {
     border: 3px solid black;
-    height: 350px;
-    width: 600px;
+    height: 500px;
+    width: 800px;
     margin: 30px;
     border-radius: 15px;
     font-size: 3rem;
