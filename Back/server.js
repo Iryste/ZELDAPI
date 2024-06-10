@@ -41,15 +41,6 @@ app.get('/games', (req, res) => {
             "id": "5f6ce9d805615a85623ec2b8"
         },
         {
-            "name": "The Legend of Zelda: Link's Awakening",
-            "description": "The game was also made available on the Nintendo 3DS eShop on June 7, 2011 at the price of $5.99 US. ",
-            "developer": "Nintendo",
-            "publisher": "Nintendo",
-            "image": "../img/linkawake.jpg",
-            "released_date": " December 15, 1998",
-            "id": "5f6ce9d805615a85623ec2bb"
-        },
-        {
             "name": "The Legend of Zelda: Ocarina of Time",
             "description": "The Legend of Zelda: Ocarina of Time is the fifth main installment of The Legend of Zelda series and the first to be released for the Nintendo 64. It was one of the most highly anticipated games of its age. It is listed among the greatest video games ever created by numerous websites and magazines. Released in the United States on November 23, 1998, it was the first game in The Legend of Zelda series that was visually displayed in 3D . ",
             "developer": "Nintendo EAD",
@@ -57,6 +48,15 @@ app.get('/games', (req, res) => {
             "image": "../img/zeldaocarina.jpg",
             "released_date": " November 23, 1998",
             "id": "5f6ce9d805615a85623ec2ba"
+        },
+        {
+            "name": "The Legend of Zelda: Link's Awakening",
+            "description": "The game was also made available on the Nintendo 3DS eShop on June 7, 2011 at the price of $5.99 US. ",
+            "developer": "Nintendo",
+            "publisher": "Nintendo",
+            "image": "../img/linkawake.jpg",
+            "released_date": " December 15, 1998",
+            "id": "5f6ce9d805615a85623ec2bb"
         },
         {
             "name": "The Legend of Zelda: Majora's Mask",
@@ -90,6 +90,7 @@ app.get('/games', (req, res) => {
             "description": "The Legend of Zelda: The Wind Waker is the tenth main installment of The Legend of Zelda series. It is the first Zelda game for the Nintendo GameCube, and was released in Japan on December 13, 2002, in Canada and the United States on March 24, 2003, in South Korea on April 16, 2003, in Europe on May 2, 2003 and in Australia on May 7, 2003. ",
             "developer": "Nintendo EAD",
             "publisher": "Nintendo",
+            "image": "../img/windwaker.jpg",
             "released_date": " March 24, 2003",
             "id": "5f6ce9d805615a85623ec2bf"
         },
@@ -98,6 +99,7 @@ app.get('/games', (req, res) => {
             "description": "One night, an ominous cloud covers Hyrule, throwing fear into the people. Princess Zelda calls upon her most trusted childhood friend, Link. She wants to check up on the Four Sword, fearing that the seal that imprisoned the evil wind sorcerer Vaati inside of it at the end of Four Swords might have weakened. Inside the castle they meet up with the gathered six Maidens, whose purpose is to protect Hyrule as well as the Four Sword Sanctuary. With the help of the maidens Zelda summons a portal to the sanctuary.  ",
             "developer": "Nintendo",
             "publisher": "Nintendo",
+            "image": "../img/four.jpg",
             "released_date": " June 7, 2004",
             "id": "5f6ce9d805615a85623ec2c1"
         },
@@ -106,6 +108,7 @@ app.get('/games', (req, res) => {
             "description": "The Legend of Zelda: The Minish Cap is the twelfth main installment of The Legend of Zelda series. It was released for the Game Boy Advance in 2004. ",
             "developer": "Capcom",
             "publisher": "Nintendo",
+            "image": "../img/minish.jpg",
             "released_date": " January 10, 2005",
             "id": "5f6ce9d805615a85623ec2c6"
         },
@@ -114,6 +117,7 @@ app.get('/games', (req, res) => {
             "description": "The Legend of Zelda: Twilight Princess is the thirteenth main installment of The Legend of Zelda series, released for both the Nintendo GameCube and Wii. It was highly anticipated by many members of the gaming community and was regarded as finally fulfilling the dreams of those who wanted a much more realistic and mature Zelda game, as seen in the SpaceWorld 2000 GameCube Tech Demo. This is the first Zelda game to be rated T by ESRB and 12+ by PEGI. The reason is probably because of violence, blood , and signs of nudity . This game is also notable for being the first console Zelda title released in the United States before Japan, as the Wii version was released in America on November 19, 2006, whereas the Japanese versions were released on December 2. Because of this, Twilight Princess was one of the launch titles for the Wii alongside Wii Sports in the United States. ",
             "developer": "Nintendo EAD",
             "publisher": "Nintendo",
+            "image": "../img/twilight.jpg",
             "released_date": " November 19, 2006",
             "id": "5f6ce9d805615a85623ec2be"
         },
@@ -122,6 +126,7 @@ app.get('/games', (req, res) => {
             "description": "",
             "developer":"",
             "publisher":"",
+            "image": "../img/phantom.jpg",
             "release_date":"October 7, 2007"
         },
         {
@@ -129,6 +134,7 @@ app.get('/games', (req, res) => {
             "description": " ",
             "developer": "Nintendo EAD",
             "publisher": "Nintendo",
+            "image": "../img/spirit.jpg",
             "released_date": " December 7, 2009",
             "id": "5f6ce9d805615a85623ec2c5"
         },
@@ -137,6 +143,7 @@ app.get('/games', (req, res) => {
             "description": "",
             "developer": "",
             "publisher": "",
+            "image": "../img/skyward.jpg",
             "released_date": "November 18, 2011",
         },
         {
@@ -144,21 +151,15 @@ app.get('/games', (req, res) => {
             "description": "",
             "developer": "",
             "publisher": "",
+            "image": "../img/between.jpg",
             "released_date": "November 22, 2013"
-        },
-        {
-            "name": "The Legend of Zelda: Tri Force Heroes",
-            "description": "The Legend of Zelda: Tri Force Heroes is the eighteenth main installment of The Legend of Zelda series. The game was released on October 23, 2015 in North America and Europe, October 24 in Australia, and October 22 in Japan. It was revealed during E3 2015 on June 16. ",
-            "developer": "Nintendo",
-            "publisher": "Nintendo",
-            "released_date": " October 23, 2015",
-            "id": "5f6ce9d805615a85623ec2ce"
         },
         {
             "name": "The Legend of Zelda: Breath of the Wild",
             "description": "The Legend of Zelda: Breath of the Wild is the nineteenth main installment of The Legend of Zelda series. It was released simultaneously worldwide for the Wii U and Nintendo Switch on March 3, 2017",
             "developer": "Nintendo",
             "publisher": "Nintendo",
+            "image": "../img/breath.jpg",
             "released_date": " March 3, 2017",
             "id": "5f6ce9d805615a85623ec2c9"
         },
@@ -167,6 +168,7 @@ app.get('/games', (req, res) => {
             "description": "",
             "developer": "",
             "publisher": "Nintendo",
+            "image": "../img/tears.avif",
             "released_date": "May 12, 2023 ",
             "id": "5f6ce9d805615a85623ec2cf"
         }

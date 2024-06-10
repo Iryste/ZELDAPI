@@ -5,7 +5,7 @@ imgHeader.id = 'banner';
 imgHeader.src = '../img/zelda-banner.png';
 
 const h1 = document.createElement('h1');
-h1.innerText = "BIENVENUE SUR ZELDAPI";
+h1.innerText = "PROJET ZELDAPI";
 
 header.append(h1);
 header.append(imgHeader);
@@ -26,11 +26,12 @@ const a5 = document.createElement('a');
 const a6 = document.createElement('a')
 
 a.innerText = 'Jeux';
+a.href = '../jeux/games.html'
 a2.innerText = 'Donjons';
 a3.innerText = 'Boss';
 a4.innerText = 'Objets';
 a5.innerText = 'Lieux';
-a5.href = './lieux.html'
+a5.href = '../lieux/lieux.html'
 a6.innerText = 'Personnages';
 navBar.append(ul);
 ul.append(li, li2, li3, li4, li5, li6);
@@ -65,13 +66,11 @@ const bottomLinks = ['https://github.com/Iryste', 'https://github.com/Iryste', '
 const i = document.createElement('i');
 const i2 = document.createElement('i');
 const i3 = document.createElement('i');
-const i4 = document.createElement('i')
 
 span.innerText = 'retrouvez moi sur les reseaux'
 i.className = 'fa-brands fa-github';
 i2.className = 'fa-brands fa-linkedin';
 i3.className = 'fa-brands fa-twitter';
-i4.className = 'fa-solid fa-question';
 
 bottomLinks.forEach(liens => {
     const aFooter = document.createElement('a');
@@ -80,7 +79,7 @@ bottomLinks.forEach(liens => {
     footer.append(span);
     span.append(div);
     div.append(aFooter);
-    aFooter.append(i, i2, i3, i4);
+    aFooter.append(i, i2, i3);
     
 })
 

@@ -1,0 +1,38 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+h2 {
+    /* padding-top: 50px; */
+    text-align: center;
+    font-size: 3rem;
+}
+
+img {
+    /* padding-top: 50px; */
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+}
+
+#mainText {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#frontPage {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #00ff00, #32cd32, #228b22, #006400);
+    justify-content: center;
+    align-items: center;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
