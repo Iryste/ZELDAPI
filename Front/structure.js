@@ -2,7 +2,7 @@ const header = document.querySelector('.header');
 
 const imgHeader = document.createElement('img');
 imgHeader.id = 'banner';
-imgHeader.src = './img/zelda-banner.png';
+imgHeader.src = '../img/zelda-banner.png';
 
 const h1 = document.createElement('h1');
 h1.innerText = "BIENVENUE SUR ZELDAPI";
@@ -17,25 +17,29 @@ const li2 = document.createElement('li');
 const li3 = document.createElement('li');
 const li4 = document.createElement('li');
 const li5 = document.createElement('li');
+const li6 = document.createElement('li')
 const a = document.createElement('a');
 const a2 = document.createElement('a');
 const a3 = document.createElement('a');
 const a4 = document.createElement('a');
 const a5 = document.createElement('a');
+const a6 = document.createElement('a')
 
-a.innerText = 'lieux';
-a.href = './lieux.html'
-a2.innerText = 'personnages';
-a5.innerText = 'objets';
-a3.innerText = 'donjons';
-a4.innerText = 'boss';
+a.innerText = 'Jeux';
+a2.innerText = 'Donjons';
+a3.innerText = 'Boss';
+a4.innerText = 'Objets';
+a5.innerText = 'Lieux';
+a5.href = './lieux.html'
+a6.innerText = 'Personnages';
 navBar.append(ul);
-ul.append(li, li2, li3, li4, li5);
+ul.append(li, li2, li3, li4, li5, li6);
 li.append(a);
 li2.append(a2);
 li3.append(a3);
 li4.append(a4);
 li5.append(a5);
+li6.append(a6)
 
 // const navBar = document.querySelector('#navbar')
 // const ul = document.createElement('ul')

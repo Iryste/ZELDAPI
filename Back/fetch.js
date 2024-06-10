@@ -11,7 +11,6 @@ export async function fetchData(path) {
     }
     const result = await fetch(`${apiUrl}${path}`, options)
     if (result.ok) {
-        // console.log(result)
         return result.json();
     } else {
         throw new Error('Erreur', {cause:result});
