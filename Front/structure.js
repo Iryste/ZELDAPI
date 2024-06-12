@@ -56,32 +56,52 @@ li6.append(a6)
 // navBar.appendChild(ul)
 
 
+const footer = document.querySelector('.footer');
 const span = document.createElement('span');
+span.innerText = 'retrouvez moi sur les reseaux';
+
 const div = document.createElement('div')
 span.id = 'bottom-text';
 div.id = 'icons';
-const footer = document.querySelector('.footer');
-const bottomLinks = ['https://github.com/Iryste', 'https://www.linkedin.com/in/jean-baptiste-hamel-b111a0302/', 'https://x.com/Iryste119790'];
+
 
 
 const i = document.createElement('i');
-const i2 = document.createElement('i');
-const i3 = document.createElement('i');
-span.innerText = 'retrouvez moi sur les reseaux'
-footer.append(span);
-span.append(div);
+i.className = 'fa-brands fa-github';
+const aGit = document.createElement('a');
+aGit.href = 'https://github.com/Iryste';
+aGit.setAttribute('target', '_blank');
 
-bottomLinks.forEach(liens => {
-    const aFooter = document.createElement('a');
-    i.className = 'fa-brands fa-github';
-    i2.className = 'fa-brands fa-linkedin';
-    i3.className = 'fa-brands fa-twitter';
-    aFooter.href = liens;
-    aFooter.setAttribute('target', '_blank');
-    div.append(aFooter);
-    aFooter.append(i, i2, i3);
+const i2 = document.createElement('i');
+i2.className = 'fa-brands fa-linkedin';
+const aLink = document.createElement('a');
+aLink.href = 'https://www.linkedin.com/in/jean-baptiste-hamel-b111a0302/';
+aLink.setAttribute('target', '_blank');
+
+const i3 = document.createElement('i');
+i3.className = 'fa-brands fa-twitter';
+const aX = document.createElement('a');
+aX.href = 'https://x.com/Iryste119790';
+aX.setAttribute('target', '_blank');
+
+footer.append(span, div);
+div.append(aGit, aLink, aX);
+aGit.append(i)
+aLink.append(i2)
+aX.append(i3)
+
+
+// bottomLinks.forEach(liens => {
+//     const aFooter = document.createElement('a');
+//     i.className = 'fa-brands fa-github';
+//     i2.className = 'fa-brands fa-linkedin';
+//     i3.className = 'fa-brands fa-twitter';
+//     aFooter.href = liens;
+    // aFooter.setAttribute('target', '_blank');
+//     div.append(aFooter);
+//     aFooter.append(i, i2, i3);
     
-})
+// })
 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
