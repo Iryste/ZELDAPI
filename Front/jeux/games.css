@@ -1,5 +1,5 @@
 .gameName {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 #boxes {
@@ -14,9 +14,9 @@
 
 .box {
     border: 3px solid black;
-    width: 750px;
+    width: 400px;
     border-radius: 15px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     height: fit-content;
     background: linear-gradient(to right, yellow, #adff2f, #32cd32, #228b22, #006400);
     overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 .imgContainer {
-    max-height: 350px;
+    max-height: 200px;
     overflow: hidden;
 }
 

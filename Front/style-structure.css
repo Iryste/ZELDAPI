@@ -28,7 +28,7 @@ header {
 h1 {
     position: absolute;
     color: darkgreen;
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 5px;
 }
 
@@ -53,7 +53,7 @@ li {
 }
 
 li a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
     color: black;
     transition: color 0.3 ease;
@@ -76,7 +76,7 @@ li a:hover {
 }
 
 #bottom-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .fa-brands {

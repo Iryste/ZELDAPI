@@ -61,23 +61,23 @@ const div = document.createElement('div')
 span.id = 'bottom-text';
 div.id = 'icons';
 const footer = document.querySelector('.footer');
-const bottomLinks = ['https://github.com/Iryste', 'https://github.com/Iryste', 'https://github.com/Iryste', './img/montage.png'];
+const bottomLinks = ['https://github.com/Iryste', 'https://www.linkedin.com/in/jean-baptiste-hamel-b111a0302/', 'https://x.com/Iryste119790'];
+
 
 const i = document.createElement('i');
 const i2 = document.createElement('i');
 const i3 = document.createElement('i');
-
 span.innerText = 'retrouvez moi sur les reseaux'
-i.className = 'fa-brands fa-github';
-i2.className = 'fa-brands fa-linkedin';
-i3.className = 'fa-brands fa-twitter';
+footer.append(span);
+span.append(div);
 
 bottomLinks.forEach(liens => {
     const aFooter = document.createElement('a');
+    i.className = 'fa-brands fa-github';
+    i2.className = 'fa-brands fa-linkedin';
+    i3.className = 'fa-brands fa-twitter';
     aFooter.href = liens;
     aFooter.setAttribute('target', '_blank');
-    footer.append(span);
-    span.append(div);
     div.append(aFooter);
     aFooter.append(i, i2, i3);
     

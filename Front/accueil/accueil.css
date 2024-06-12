@@ -1,12 +1,12 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 h2 {
     padding: 50px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 img {
@@ -19,7 +19,7 @@ img {
 #mainText {
     padding: 50px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #frontPage {
