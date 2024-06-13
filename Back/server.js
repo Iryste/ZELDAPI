@@ -19,7 +19,8 @@ app.get('/games', (req, res) => {
             "developer": "Nintendo R&D 4",
             "publisher": "Nintendo",
             "image": '../img/zelda0.jpg',
-            "released_date": " February 21, 1986",
+            "released_date": "February 21, 1986",
+            "console": "Console: Nintendo Entertainment System",
             "id": "5f6ce9d805615a85623ec2b7"
         },
         {
@@ -29,6 +30,7 @@ app.get('/games', (req, res) => {
             "publisher": "Nintendo",
             "image": "../img/zelda1.jpg",
             "released_date": " January 14, 1987",
+            "console": "Console: Nintendo Entertainment System",
             "id": "5f6ce9d805615a85623ec2bd"
         },
         {
@@ -38,6 +40,7 @@ app.get('/games', (req, res) => {
             "publisher": "Nintendo",
             "image" : "../img/zeldalinkpast.jpg",
             "released_date": " April 13, 1992",
+            "console": "Console: Nintendo GameBoy",
             "id": "5f6ce9d805615a85623ec2b8"
         },
         {
@@ -47,6 +50,7 @@ app.get('/games', (req, res) => {
             "publisher": "Nintendo",
             "image": "../img/zeldaocarina.jpg",
             "released_date": " November 23, 1998",
+            "console": "Console: Nintendo 64",
             "id": "5f6ce9d805615a85623ec2ba"
         },
         {

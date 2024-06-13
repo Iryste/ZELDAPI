@@ -1,10 +1,10 @@
 .gameName {
     font-size: 1.3rem;
+    padding: 5px;
 }
 
 #boxes {
     display: flex;
-    /* wrap ?  */
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
@@ -14,20 +14,24 @@
 }
 
 .box {
-    border: 3px solid black;
+    border: 2px solid black;
     width: 400px;
     border-radius: 15px;
-    font-size: 2.5rem;
+    font-size: 1.1rem;
+    text-align: center;
     height: fit-content;
     background: linear-gradient(to right, yellow, #adff2f, #32cd32, #228b22, #006400);
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
+#dropDownConsole, #dropDownDate {
+    padding: 11px;
+}
+
 .box:hover {
     transform: translate(0, -25px);
     box-shadow: 10px 0px 25px 5px #313e50, -10px 5px 25px 5px #313e50;
-    transition: all 0.3s ease;
 }
 
 .imgContainer {
@@ -35,6 +39,6 @@
     overflow: hidden;
 }
 
-/* .titleContainer {
-
+/* .animateEnter {
+    
 } */
