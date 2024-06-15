@@ -81,6 +81,7 @@ fetchData('/games').then((data) => {
         const img = document.createElement('img');
         img.src = game.image;
         img.style.width = '100%';
+        img.style.height = 'auto';
 
         const dropDownConsole = document.createElement('p');
         dropDownConsole.id = 'dropDownConsole';

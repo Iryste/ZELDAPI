@@ -13,31 +13,23 @@ header.append(imgHeader);
 const navBar = document.querySelector('#navbar');
 const ul = document.createElement('ul');
 const li = document.createElement('li');
-const li2 = document.createElement('li');
-const li3 = document.createElement('li');
 const li4 = document.createElement('li');
 const li5 = document.createElement('li');
 const li6 = document.createElement('li')
 const a = document.createElement('a');
-const a2 = document.createElement('a');
-const a3 = document.createElement('a');
 const a4 = document.createElement('a');
 const a5 = document.createElement('a');
 const a6 = document.createElement('a')
 
 a.innerText = 'Jeux';
 a.href = '../jeux/games.html'
-a2.innerText = 'Donjons';
-a3.innerText = 'Boss';
 a4.innerText = 'Objets';
 a5.innerText = 'Lieux';
 a5.href = '../lieux/lieux.html'
 a6.innerText = 'Personnages';
 navBar.append(ul);
-ul.append(li, li2, li3, li4, li5, li6);
+ul.append(li, li4, li5, li6);
 li.append(a);
-li2.append(a2);
-li3.append(a3);
 li4.append(a4);
 li5.append(a5);
 li6.append(a6)
