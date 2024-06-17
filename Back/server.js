@@ -199,13 +199,18 @@ app.get('/characters', (req, res) => {
     const characters = [
     {
         "name": "Link",
-        "image": "../img/linkFrontPage.webp"
+        "image": "../img/linkFrontPage.webp",
+        "description": "Link est un personnage dont l’histoire, l'apparence et l’âge peuvent cours des jeux. De manière générale, on peut le décrire comme un jeune garçon, dont l'âge ne dépasse jamais dix-neuf ans, qui va être amené à quitter son foyer pour partir en voyage afin de combattre les forces du mal.\n Bien qu'il ne semble pas connaître très bien le maniement des armes au début des jeux, il maîtrise rapidement de nouvelles techniques et se constitue un arsenal varié (l'épée restant son arme fétiche), apprend quelques fois la magie, traverse des donjons, pour devenir finalement un héros légendaire."
     },
     {
         "name": "Zelda",
+        "image": "../img/zeldaSmash.webp",
+        "description": "La Princesse Zelda est un personnage central de la série The Legend of Zelda. Bien que la série doive son nom à ce personnage, il ne s'agit pas d'un personnage jouable dans la série principale et elle n'est pas non plus le personnage principal. Il y a même certains jeux où elle n'apparaît pas ou très peu (comme Majora's Mask ou encore Tri Force Heroes). Il s'agit d'un membre de la famille royale d'Hyrule.\n Elle est la plupart du temps enlevée par Ganondorf, Vaati ou un autre antagoniste et Link doit la secourir. Comme Link, elle a de nombreuses incarnations au fil des jeux."
     },
     {
         "name": "Ganondorf",
+        "image": "../img/ganondorf.webp",
+        "description": "Ganondorf est l'antagoniste principal de la série Zelda. Il est présent dans la saga depuis The Legend of Zelda sous sa forme bestiale Ganon, mais apparaît sous sa forme humaine pour la première fois dans Ocarina of Time, bien qu'elle ait été mentionnée dans A Link to the Past. Ganondorf fait son retour dans Tears of the Kingdom pour la première fois depuis Twilight Princess, après dix-sept années d'absence dans la série principale.\n Originaire des contrées Gerudos, Ganondorf est un homme fondamentalement mauvais qui n'a de cesse de vouloir soumettre Hyrule par tous les moyens. Sa nature dépravée ainsi que ses ambitions destructrices le désignent comme l'ennemi héréditaire de Link et Zelda, seuls à même de représenter une menace pour le Seigneur du Malin."
     },
     ]
     res.send(characters);

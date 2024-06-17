@@ -96,18 +96,18 @@ aX.append(i3)
     
 // })
 
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const boxes = document.querySelector('#boxes')
+// const menuBtn = document.querySelector('.menu-btn');
+// const menu = document.querySelector('.menu');
+// const boxes = document.querySelector('#boxes')
 
-menuBtn.addEventListener('click', () => {
-menu.classList.toggle('active');
-if (menu.classList.contains('active')) {
-    boxes.style.filter = 'blur(10px)'
-} else {
-    boxes.style.filter = 'none'
-}
-});
+// menuBtn.addEventListener('click', () => {
+// menu.classList.toggle('active');
+// if (menu.classList.contains('active')) {
+//     boxes.style.filter = 'blur(10px)'
+// } else {
+//     boxes.style.filter = 'none'
+// }
+// });
 
 
 
