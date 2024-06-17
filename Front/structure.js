@@ -27,6 +27,7 @@ a4.innerText = 'Objets';
 a5.innerText = 'Lieux';
 a5.href = '../lieux/lieux.html'
 a6.innerText = 'Personnages';
+a6.href = '../personnages/personnages.html'
 navBar.append(ul);
 ul.append(li, li4, li5, li6);
 li.append(a);

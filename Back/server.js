@@ -192,4 +192,21 @@ app.get('/games', (req, res) => {
         }
     ]
     res.send(games);
+});
+
+
+app.get('/characters', (req, res) => {
+    const characters = [
+    {
+        "name": "Link",
+        "image": "../img/linkFrontPage.webp"
+    },
+    {
+        "name": "Zelda",
+    },
+    {
+        "name": "Ganondorf",
+    },
+    ]
+    res.send(characters);
 })
