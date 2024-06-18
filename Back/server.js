@@ -215,3 +215,57 @@ app.get('/characters', (req, res) => {
     ]
     res.send(characters);
 })
+
+
+
+app.get('/otherCharacters', (req, res) => {
+    const otherCharacters = [
+    {
+        "name": "Roi d'Hyrule",
+        "image": "../img/king.webp",
+        "description": "Le Roi d’Hyrule est un personnage récurrent à la série Legend of Zelda. Pourtant, bien que son nom soit énoncé dans beaucoup d’épisodes de la saga, le Roi d’Hyrule n’est apparu que très rarement. On ressent tout du moins sa présence sur l’univers de la série, étant le père de la princesse Zelda."
+    },
+    {
+        "name": "Épona",
+        "image": "../img/epona.webp",
+        "description": "Épona est une jument apparaissant dans Ocarina of Time, Majora's Mask, Four Swords Adventures, Twilight Princess et Breath of the Wild. Elle fait également une apparition dans The Minish Cap, à côté de Malon qui vend du lait dans la cité d'Hyrule.\nSon nom doit son origine à une divinité celtique gauloise, qui est représentée par un cheval."
+    },
+    {
+        "name": "Impa",
+        "image": "../img/impa.webp",
+        "description": "Impa est un personnage récurrent de la saga The Legend of Zelda.\n Selon les jeux, son apparence, son âge et son rôle sont différents. Le plus souvent, elle est la nourrice ou le garde du corps de la Princesse Zelda."
+    },
+    {
+        "name": "Terry",
+        "image": "../img/terry.webp",
+        "description": "Terry est un personnage récurent de la série The Legend of Zelda.\nIl s'agit d'un marchand itinérant chez qui Link peut acheter divers articles. Il prend soin de ses clients et offre souvent des réductions aux plus fidèles. Il est très connu parmi les fans de la série pour ses interjections : 'OOOOOOH!', 'Thank you!' et 'Bye!'"
+    },
+    ];
+    res.send(otherCharacters);
+});
+
+app.get('/items', (req, res) => {
+    const items = [
+        {
+            "name": "",
+            "image": "../img/",
+            "description": ""
+        },
+        {
+            "name": "",
+            "image": "../img/",
+            "description": ""
+        },
+        {
+            "name": "",
+            "image": "../img/",
+            "description": ""
+        },
+        {
+            "name": "",
+            "image": "../img/",
+            "description": ""
+        },
+    ];
+    res.send(items);
+});
