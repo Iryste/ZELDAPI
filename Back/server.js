@@ -244,27 +244,27 @@ app.get('/otherCharacters', (req, res) => {
     res.send(otherCharacters);
 });
 
-app.get('/items', (req, res) => {
+app.get('/objets', (req, res) => {
     const items = [
         {
-            "name": "",
-            "image": "../img/",
-            "description": ""
+            "name": "Triforce",
+            "image": "../img/triforce.webp",
+            "description": "La Triforce est un artefact sacré et mystique, constitué de trois triangles d'or qui se combinent pour former un triangle plus grand. Chacun des trois triangles représente une vertu divine : la Puissance, la Sagesse et le Courage. Ensemble, ils forment un symbole de l'équilibre et de l'harmonie dans le royaume d'Hyrule.\nLorsqu'une personne possède les trois parties de la Triforce, elle obtient un pouvoir quasi divin, capable de réaliser n'importe quel souhait. Cependant, la Triforce ne fait que révéler le vrai cœur de son porteur, ne pouvant être utilisée pleinement que par ceux dont les intentions sont pures et équilibrées."
         },
         {
-            "name": "",
-            "image": "../img/",
-            "description": ""
+            "name": "Épée de Légende",
+            "image": "../img/mastersword.png",
+            "description": "La Master Sword, également connue sous le nom d'Épée de légende, est l'une des armes les plus emblématiques de la série The Legend of Zelda. Forgée pour éradiquer le mal, elle est souvent le seul moyen de vaincre Ganon ou d'autres forces maléfiques menaçant Hyrule.\nLa lame est reconnaissable à son éclat bleu vif, et son garde en croix est orné de motifs dorés et bleus.\nLa Master Sword est souvent trouvée dans un sanctuaire ou un temple, reposant sur un piédestal en attente d'un héros digne de la brandir."
         },
         {
-            "name": "",
-            "image": "../img/",
-            "description": ""
+            "name": "Bouclier Hylien",
+            "image": "../img/shield.webp",
+            "description": "Le Bouclier Hylien est l'un des boucliers les plus reconnaissables et emblématiques de la série The Legend of Zelda. Il s'agit d'un grand bouclier en métal, de forme rectangulaire avec un sommet pointu, souvent décoré du symbole de la Triforce et d'un aigle rouge stylisé. Le bouclier est principalement bleu avec des bordures argentées, renforçant son apparence royale et prestigieuse.\nCe bouclier offre une excellente protection contre les attaques physiques et magiques, et il est souvent le choix de prédilection de Link pour affronter des ennemis puissants et traverser des terrains dangereux. Ce bouclier est non seulement un outil défensif crucial, mais il symbolise également le courage et la détermination de Link, marquant son statut de héros et de protecteur d'Hyrule."
         },
         {
-            "name": "",
-            "image": "../img/",
-            "description": ""
+            "name": "Ocarina du Temps",
+            "image": "../img/ocarina.png",
+            "description": "L'Ocarina du Temps est un instrument magique et légendaire dans la série The Legend of Zelda. C'est une ocarina bleue à six trous, souvent ornée d'un symbole sacré. Cet instrument joue un rôle central dans le jeu éponyme, permettant à Link de voyager dans le temps, de manipuler la météo, de téléporter vers des lieux spécifiques et de résoudre divers puzzles.\nL'ocarina n'est pas seulement un outil puissant, mais aussi un symbole de la connexion entre Link et la princesse Zelda, souvent donnée à Link par Zelda elle-même comme un moyen de communication et de protection."
         },
     ];
     res.send(items);

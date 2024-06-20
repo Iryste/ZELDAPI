@@ -1,13 +1,11 @@
 import { fetchData } from "../../Back/fetch.js";
 
+
 const container = document.querySelector('.container');
-
-
 
 const mainTitle = document.createElement('span');
 mainTitle.className = 'mainTitle';
 mainTitle.innerText = 'Personnages Principaux';
-
 
 container.append(mainTitle)
 
@@ -31,10 +29,10 @@ fetchData('/characters').then((data) => {
         desc.innerText = perso.description;
         
         container.append(newDiv, mainTitle2);
-        titleImg.append(title, img)
+        titleImg.append(title, img);
         newDiv.append(titleImg, desc);
     });
-})
+});
 const mainTitle2 = document.createElement('span');
 mainTitle2.className = 'mainTitle';
 mainTitle2.innerText = 'Personnages Secondaires';
@@ -59,8 +57,8 @@ fetchData('/otherCharacters').then((data) => {
         const desc = document.createElement('p');
         desc.innerText = autres.description;
         
-        container.append(newDiv)
-        titleImg.append(title, img)
-        newDiv.append(titleImg, desc)
+        container.append(newDiv);
+        titleImg.append(title, img);
+        newDiv.append(titleImg, desc);
     })
 })

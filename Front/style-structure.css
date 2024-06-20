@@ -37,6 +37,7 @@ h1 {
     width: 100%;
     border-bottom: 8px solid #313e50;
     border-top: 8px solid #313e50;
+    transition: all 0.3s ease
 }
 
 ul {
