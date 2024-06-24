@@ -269,3 +269,28 @@ app.get('/objets', (req, res) => {
     ];
     res.send(items);
 });
+
+app.get('/quizz', (req, res) => {
+    const quizz = [
+        {
+            question: "Comment s'appelle le héros de la série Zelda ?",
+            answers: [
+                { text: "Link", correct: true },
+                { text: "Zelda", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1,
+        },
+        {
+            question: "Quel est le nom de la princesse de Hyrule ?",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ]
+        },
+    ];
+    res.send(quizz);
+});
