@@ -273,7 +273,17 @@ app.get('/objets', (req, res) => {
 app.get('/quizz', (req, res) => {
     const quizz = [
         {
-            question: "Comment s'appelle le héros de la série Zelda ?",
+            question: "Quel studio Japonais est à l'origine des jeux The Legend of Zelda ?",
+            answers: [
+                { text: "Sony", correct: false },
+                { text: "Nintendo", correct: true },
+                { text: "Square Enix", correct: false },
+                { text: "From Software", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "Comment s'appelle le héros de la série de jeu The Legend of Zelda ?",
             answers: [
                 { text: "Link", correct: true },
                 { text: "Zelda", correct: false },
@@ -283,13 +293,74 @@ app.get('/quizz', (req, res) => {
             points: 1,
         },
         {
-            question: "Quel est le nom de la princesse de Hyrule ?",
+            question: "Qui est la princesse du royaume d'Hyrule ?",
+            answers: [
+                { text: "Epona", correct: false },
+                { text: "Zelda", correct: true },
+                { text: "Saria", correct: false },
+                { text: "Tetra", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "",
             answers: [
                 { text: "Zelda", correct: true },
                 { text: "Link", correct: false },
                 { text: "Ganondorf", correct: false },
                 { text: "Epona", correct: false }
-            ]
+            ],
+            points: 1
+        },
+        {
+            question: "",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1
+        },
+        {
+            question: "",
+            answers: [
+                { text: "Zelda", correct: true },
+                { text: "Link", correct: false },
+                { text: "Ganondorf", correct: false },
+                { text: "Epona", correct: false }
+            ],
+            points: 1
         },
     ];
     res.send(quizz);
