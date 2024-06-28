@@ -272,6 +272,7 @@ app.get('/objets', (req, res) => {
 
 app.get('/quizz', (req, res) => {
     const quizz = [
+
         {
             question: "Quel studio Japonais est à l'origine des jeux The Legend of Zelda ?",
             answers: [
@@ -290,7 +291,7 @@ app.get('/quizz', (req, res) => {
                 { text: "Ganondorf", correct: false },
                 { text: "Epona", correct: false }
             ],
-            points: 1,
+            points: 1
         },
         {
             question: "Qui est la princesse du royaume d'Hyrule ?",
@@ -303,64 +304,126 @@ app.get('/quizz', (req, res) => {
             points: 1
         },
         {
-            question: "",
+            question: "Quel est cet objet ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "La trinité", correct: false },
+                { text: "La triforce", correct: true },
+                { text: "La force triple", correct: false },
+                { text: "Le feu de Din", correct: false }
+            ],
+            points: 1,
+            image: "../img/triforce.webp"
+        },
+        {
+            question: "Quel est le premier jeu The Legend of Zelda en 3D ?",
+            answers: [
+                { text: "Majora's Mask", correct: false },
+                { text: "A link to the Past", correct: false },
+                { text: "Ocarina of Time", correct: true },
+                { text: "Cadence of Hyrule", correct: false }
             ],
             points: 1
         },
         {
-            question: "",
+            question: "Quel est la monnaie des jeux The Legend of Zelda ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "Les rubis", correct: true },
+                { text: "Les pièces d'or", correct: false },
+                { text: "Les gemmes", correct: false },
+                { text: "Les diamants", correct: false }
             ],
-            points: 1
+            points: 2
         },
         {
-            question: "",
+            question: "Dans Ocarina of Time, comment s'appelle le sage du vent ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "Rauru", correct: false },
+                { text: "Impa", correct: false },
+                { text: "Ruto", correct: false },
+                { text: "Saria", correct: true }
             ],
-            points: 1
+            points: 2
         },
         {
-            question: "",
+            question: "Dans Majora's Mask, de combien de temps dispose Link avant la fin du monde ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "Un jour", correct: false },
+                { text: "Trois jours", correct: true },
+                { text: "Cinq jours", correct: false },
+                { text: "Une semaine", correct: false }
             ],
-            points: 1
+            points: 2
         },
         {
-            question: "",
+            question: "Dans Minish cap, comment s'appelle le chapeau qui accompagne Link ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "Excelio", correct: true },
+                { text: "Vaati", correct: false },
+                { text: "Lorio", correct: false },
+                { text: "Navi", correct: false }
             ],
-            points: 1
+            points: 2
         },
         {
-            question: "",
+            question: "Dans Link's Awakening, où se réveille Link ?",
             answers: [
-                { text: "Zelda", correct: true },
-                { text: "Link", correct: false },
-                { text: "Ganondorf", correct: false },
-                { text: "Epona", correct: false }
+                { text: "Au château d'Hyrule", correct: false },
+                { text: "Sur la plage", correct: true },
+                { text: "Dans sa chambre", correct: false },
+                { text: "En prison", correct: false }
             ],
-            points: 1
+            points: 2
+        },
+        {
+            question: "Dans Skyward Sword, qui est cet antagoniste ?",
+            answers: [
+                { text: "Ganon", correct: false },
+                { text: "Vaati", correct: false },
+                { text: "Le Banni", correct: false },
+                { text: "Ghirahim", correct: true }
+            ],
+            points: 3,
+            image: "../img/ghirahim.webp"
+        },
+        {
+            question: "Le royaume de Labrynna apparait dans quel jeu ?",
+            answers: [
+                { text: "Minish cap", correct: false },
+                { text: "Oracle of Ages", correct: true },
+                { text: "Oracle of Seasons", correct: false },
+                { text: "Twilight Princess", correct: false }
+            ],
+            points: 3
+        },
+        {
+            question: "Quel est le nombre maximal de coeurs que peut obtenir Link dans Breath of the Wild ?",
+            answers: [
+                { text: "25", correct: false },
+                { text: "27", correct: false },
+                { text: "30", correct: true },
+                { text: "35", correct: false }
+            ],
+            points: 3
+        },
+        {
+            question: "Dans Majora's Mask, combien de masques différents peut on apperçevoir sur le sac du vendeur de masques ?",
+            answers: [
+                { text: "9", correct: true },
+                { text: "10", correct: false },
+                { text: "11", correct: false },
+                { text: "12", correct: false }
+            ],
+            points: 3
+        },
+        {
+            question: "Dans Tears of the Kingdom, combien y a-t-il de points de voyage rapide au total ?",
+            answers: [
+                { text: "128", correct: false },
+                { text: "136", correct: false },
+                { text: "144", correct: false },
+                { text: "152", correct: true }
+            ],
+            points: 3
         },
     ];
     res.send(quizz);
